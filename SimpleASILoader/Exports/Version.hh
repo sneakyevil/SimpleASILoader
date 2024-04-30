@@ -1,0 +1,19 @@
+#pragma once
+
+ADD_EXPORT("version", GetFileVersionInfoA);
+ADD_EXPORT("version", GetFileVersionInfoByHandle);
+ADD_EXPORT("version", GetFileVersionInfoExA);
+ADD_EXPORT("version", GetFileVersionInfoExW);
+ADD_EXPORT("version", GetFileVersionInfoSizeA);
+ADD_EXPORT("version", GetFileVersionInfoSizeExA);
+ADD_EXPORT("version", GetFileVersionInfoSizeExW);
+ADD_EXPORT("version", GetFileVersionInfoSizeW);
+ADD_EXPORT("version", GetFileVersionInfoW);
+ADD_EXPORT("version", VerFindFileA);
+ADD_EXPORT("version", VerFindFileW);
+ADD_EXPORT("version", VerInstallFileA);
+ADD_EXPORT("version", VerInstallFileW);
+ADD_EXPORT("version", VerLanguageNameA);
+ADD_EXPORT("version", VerLanguageNameW);
+ADD_EXPORT("version", VerQueryValueA);
+ADD_EXPORT("version", VerQueryValueW);

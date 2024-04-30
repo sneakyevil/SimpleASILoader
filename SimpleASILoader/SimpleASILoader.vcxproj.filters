@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Project  Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Project  Files\Includes">
+      <UniqueIdentifier>{9be21768-0fa5-437b-9ff9-4d1bffb92a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project  Files\Core">
+      <UniqueIdentifier>{12f9d793-3cb6-484f-bd6d-551e9b5a7370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project  Files\Exports">
+      <UniqueIdentifier>{266db346-73af-4dba-a319-aad78789a43e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cc">
+      <Filter>Project  Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Functions.hh">
+      <Filter>Project  Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\CRT.hh">
+      <Filter>Project  Files\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ExportManager.hh">
+      <Filter>Project  Files\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Exports\Version.hh">
+      <Filter>Project  Files\Exports</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Loader.hh">
+      <Filter>Project  Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Exports\VorbisFile.hh">
+      <Filter>Project  Files\Exports</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
