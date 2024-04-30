@@ -1,4 +1,4 @@
-### Simple ASI Loader
+## Simple ASI Loader
 - Simple hijackable dll that loads ASI modules/plugins.
 - Any `.asi` file in process/plugins/scripts directory will be automatically loaded at launch of the hijacked dll (ASI Loader).
 
