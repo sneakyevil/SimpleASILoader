@@ -9,6 +9,17 @@
 
 namespace Core
 {
+	bool ShouldDisplayError(DWORD p_dwErrorID)
+	{
+		switch (p_dwErrorID)
+		{
+		case ERROR_DLL_INIT_FAILED: // If someone uses ASI to patch some data and then unload inside DllMain this will produce error.
+			return false;
+		default:
+			return true;
+		}
+	}
+
 	void LoadModules(const char* p_szPath, const char* p_szDirectory)
 	{
 		char szFindPath[MAX_PATH] = { '\0' };
@@ -44,12 +55,16 @@ namespace Core
 			HMODULE hModule = LoadLibraryA(szModulePath);
 			if (!hModule) 
 			{
-				auto pErrorMsg = Core::GetFormattedMessageID(GetLastError());
-				auto pStr = Core::GetFormattedMessage("Failed to load module: %1\n\n%2", wFindData.cFileName, pErrorMsg);
-				LocalFree(pErrorMsg);
+				DWORD dwErrorID = GetLastError();
+				if (ShouldDisplayError(dwErrorID))
+				{
+					auto pErrorMsg = Core::GetFormattedMessageID(dwErrorID);
+					auto pStr = Core::GetFormattedMessage("Failed to load module: %1\n\n%2", wFindData.cFileName, pErrorMsg);
+					LocalFree(pErrorMsg);
 
-				MessageBoxA(0, pStr, PROJECT_NAME, MB_OK | MB_ICONERROR);
-				LocalFree(pStr);
+					MessageBoxA(0, pStr, PROJECT_NAME, MB_OK | MB_ICONERROR);
+					LocalFree(pStr);
+				}
 			}
 		} 
 		while (FindNextFileA(hFind, &wFindData));

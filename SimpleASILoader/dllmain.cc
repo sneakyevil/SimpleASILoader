@@ -24,6 +24,9 @@
 // Exports
 
 // List
+#if defined(EXPORTS_DINPUT8) || defined(EXPORTS_ALL)
+    #include "Exports/DInput8.hh"
+#endif
 #if defined(EXPORTS_VERSION) || defined(EXPORTS_ALL)
     #include "Exports/Version.hh"
 #endif
