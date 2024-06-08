@@ -3,6 +3,7 @@
 - Any `.asi` file in process/plugins/scripts directory will be automatically loaded at launch of the hijacked dll (ASI Loader).
 
 #### Supported DLLs
+- cryptbase
 - dinput8
 - version [(x64)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/version_x64) [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/version_x86)
 - vorbisfile [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/vorbisfile)

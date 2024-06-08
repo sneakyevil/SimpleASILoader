@@ -42,5 +42,8 @@
     <ClInclude Include="Exports\DInput8.hh">
       <Filter>Project Files\Exports</Filter>
     </ClInclude>
+    <ClInclude Include="Exports\Cryptbase.hh">
+      <Filter>Project Files\Exports</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

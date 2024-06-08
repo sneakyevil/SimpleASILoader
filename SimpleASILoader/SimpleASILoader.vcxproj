@@ -171,7 +171,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>EXPORTS_DINPUT8;NDEBUG;SIMPLEASILOADER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>EXPORTS_CRYPTBASE;NDEBUG;SIMPLEASILOADER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>
@@ -202,6 +202,7 @@
     <ClInclude Include="Exports\DInput8.hh" />
     <ClInclude Include="Exports\Version.hh" />
     <ClInclude Include="Exports\VorbisFile.hh" />
+    <ClInclude Include="Exports\Cryptbase.hh" />
     <ClInclude Include="Includes\CRT.hh" />
     <ClInclude Include="Includes\ExportManager.hh" />
   </ItemGroup>

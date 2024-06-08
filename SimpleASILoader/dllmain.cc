@@ -24,6 +24,9 @@
 // Exports
 
 // List
+#if defined(EXPORTS_CRYPTBASE) || defined(EXPORTS_ALL)
+#include "Exports/Cryptbase.hh"
+#endif
 #if defined(EXPORTS_DINPUT8) || defined(EXPORTS_ALL)
     #include "Exports/DInput8.hh"
 #endif
@@ -41,6 +44,7 @@ int __stdcall DllMain(HMODULE p_Module, DWORD p_Reason, void* p_Reserved)
 {
     if (p_Reason == DLL_PROCESS_ATTACH)
     {
+        MessageBoxA(0, "Loaded!", "Simple ASI Loader", MB_OK);
         DisableThreadLibraryCalls(p_Module);
         CRT::Initialize();
 
