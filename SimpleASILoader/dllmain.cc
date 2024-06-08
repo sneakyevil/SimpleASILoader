@@ -44,7 +44,8 @@ int __stdcall DllMain(HMODULE p_Module, DWORD p_Reason, void* p_Reserved)
 {
     if (p_Reason == DLL_PROCESS_ATTACH)
     {
-        MessageBoxA(0, "Loaded!", "Simple ASI Loader", MB_OK);
+        //MessageBoxA(0, "Loaded!", "Simple ASI Loader", MB_OK);
+
         DisableThreadLibraryCalls(p_Module);
         CRT::Initialize();
 
