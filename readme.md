@@ -4,7 +4,7 @@
 
 #### Supported DLLs
 - cryptbase
-- dinput8
+- dinput8 [(x64)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/dinput8_x86) [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/dinput8_x64)
 - version [(x64)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/version_x64) [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/version_x86)
 - vorbisfile [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/vorbisfile)
 
@@ -14,6 +14,7 @@
 
 #### Preprocessor Defines
 - EXPORTS_ALL (Exports everything)
+- EXPORTS_CRYPTBASE
 - EXPORTS_DINPUT8
 - EXPORTS_VERSION
 - EXPORTS_VORBISFILE
