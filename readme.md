@@ -4,7 +4,7 @@
 
 #### Supported DLLs
 - cryptbase
-- dinput8 [(x64)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/dinput8_x86) [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/dinput8_x64)
+- dinput8 [(x64)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/dinput8_x64) [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/dinput8_x86)
 - version [(x64)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/version_x64) [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/version_x86)
 - vorbisfile [(x86)](https://github.com/sneakyevil/SimpleASILoader/releases/tag/vorbisfile)
 
