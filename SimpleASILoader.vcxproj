@@ -78,8 +78,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
-    <IntDir>Build\x86\</IntDir>
-    <OutDir>$(SolutionDir)Build\$(Configuration)\x86\</OutDir>
+    <IntDir>build\x86\</IntDir>
+    <OutDir>$(SolutionDir)build\x64\output\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -88,8 +88,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
-    <IntDir>Build\x64\</IntDir>
-    <OutDir>$(SolutionDir)Build\$(Configuration)\x64\</OutDir>
+    <IntDir>build\x64\</IntDir>
+    <OutDir>$(SolutionDir)build\x64\output\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -201,14 +201,14 @@
     <ClCompile Include="dllmain.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\Functions.hh" />
-    <ClInclude Include="Core\Loader.hh" />
-    <ClInclude Include="Exports\DInput8.hh" />
-    <ClInclude Include="Exports\Version.hh" />
-    <ClInclude Include="Exports\VorbisFile.hh" />
-    <ClInclude Include="Exports\Cryptbase.hh" />
-    <ClInclude Include="Includes\CRT.hh" />
-    <ClInclude Include="Includes\ExportManager.hh" />
+    <ClInclude Include="core\functions.hh" />
+    <ClInclude Include="core\loader.hh" />
+    <ClInclude Include="exports\dinput8.hh" />
+    <ClInclude Include="exports\version.hh" />
+    <ClInclude Include="exports\vorbisfile.hh" />
+    <ClInclude Include="exports\cryptbase.hh" />
+    <ClInclude Include="includes\crt.hh" />
+    <ClInclude Include="includes\exportmanager.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

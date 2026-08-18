@@ -7,34 +7,34 @@
 //====================================================================
 // Includes (Important)
 
-#include "Includes/CRT.hh"
+#include "includes/crt.hh"
 
 //====================================================================
 // Core
 
-#include "Core/Functions.hh"
-#include "Core/Loader.hh"
+#include "core/functions.hh"
+#include "core/loader.hh"
 
 //====================================================================
 // Export Manager
 
-#include "Includes/ExportManager.hh"
+#include "includes/exportmanager.hh"
 
 //====================================================================
 // Exports
 
 // List
 #if defined(EXPORTS_CRYPTBASE) || defined(EXPORTS_ALL)
-#include "Exports/Cryptbase.hh"
+    #include "exports/cryptbase.hh"
 #endif
 #if defined(EXPORTS_DINPUT8) || defined(EXPORTS_ALL)
-    #include "Exports/DInput8.hh"
+    #include "exports/dinput8.hh"
 #endif
 #if defined(EXPORTS_VERSION) || defined(EXPORTS_ALL)
-    #include "Exports/Version.hh"
+    #include "exports/version.hh"
 #endif
 #if defined(EXPORTS_VORBISFILE) || defined(EXPORTS_ALL)
-    #include "Exports/VorbisFile.hh"
+    #include "exports/vorbisfile.hh"
 #endif
 
 //====================================================================
@@ -53,7 +53,7 @@ int __stdcall DllMain(HMODULE p_Module, DWORD p_Reason, void* p_Reserved)
             return 0;
         }
 
-        Core::StartLoader();
+        core::StartLoader();
     }
 
     return 1;

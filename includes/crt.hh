@@ -65,35 +65,14 @@ static void _initterm(_PVFV* pfbegin, _PVFV* pfend)
 //=======================================================================
 // Memory Stuff
 
-void* __cdecl malloc(size_t size)
-{
-    return HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, size);
-}
+void* __cdecl malloc(size_t size) { return HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, size); }
 
-void __cdecl free(void* block)
-{
-    HeapFree(GetProcessHeap(), 0, block);
-}
+void __cdecl free(void* block) { HeapFree(GetProcessHeap(), 0, block); }
 
-void* operator new(size_t size)
-{
-    return malloc(size);
-}
-
-void* operator new[](size_t size)
-{
-    return malloc(size);
-}
-
-void operator delete(void* p) noexcept
-{
-    free(p);
-}
-
-void operator delete[](void* p) noexcept
-{
-    free(p);
-}
+void* operator new(size_t size) { return malloc(size); }
+void* operator new[](size_t size) { return malloc(size); }
+void operator delete(void* p) noexcept { free(p); }
+void operator delete[](void* p) noexcept { free(p); }
 
 void* memset(void* dest, int ch, size_t len)
 {
